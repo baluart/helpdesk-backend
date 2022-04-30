@@ -2,7 +2,7 @@ package com.lucas.helpdesk.domain.enums;
 
 public enum Prioridade {
 
-	ABERTO(0,"ABERTO"), ANDAMENTO(1,"ANDAMENTO"), ENCERRADO(2,"ENCERRADO");
+	BAIXA(0,"BAIXA"), MEDIA(1,"MEDIA"), ALTA(2,"ALTA");
 	
    private Integer codigo;
    private String descricao;
@@ -34,7 +34,7 @@ public String getDescricao() {
 				return x;
 			}
 		}
-		throw new IllegalArgumentException("Status Encerrado");
+		throw new IllegalArgumentException("Prioridade Invalidade");
 	}
 
 }
